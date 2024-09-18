@@ -10,11 +10,12 @@ import Submitted from "./Pages/Submitted/submitted";
 import Sharedpages from "./SharedPages/Sharedpages";
 import { AppProvider } from "./Components/Hooks/context";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
+
 const App = () => {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Sharedpages />}>
             <Route index element={<Home />} />
@@ -28,7 +29,7 @@ const App = () => {
             </Route>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 };
