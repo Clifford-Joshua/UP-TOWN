@@ -1,0 +1,45 @@
+// Override any other Bootstrap variables here
+
+// Import Bootstrap's functions and variables first
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$snow: #fffafb;
+$licorice: #291711;
+$sliver: #cacdc9;
+
+// Merge custom font sizes with the default Bootstrap font sizes
+$font-sizes: map-merge(
+  (
+    "7": 0.85rem // Custom font size,,,,,,,,,,,,,,,,,,,,
+  ),
+  $font-sizes
+);
+
+$theme-colors: map-merge(
+  (
+    "snow-bg": $snow,
+    "licorice": $licorice,
+    "sliver": $sliver,
+  ),
+  $theme-colors
+);
+
+// Custom utility class for setting height to 95% of viewport height
+.min-vh-95 {
+  min-height: 95vh;
+}
+
+// Custom positioning utilities
+.bottom-5 {
+  bottom: 5%;
+}
+.start-30 {
+  left: 30%;
+}
+.start-45 {
+  left: 45%;
+}
+
+// Import Bootstrap's components and utilities
+@import "~bootstrap/scss/bootstrap";
