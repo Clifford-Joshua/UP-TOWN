@@ -1,4 +1,5 @@
 import React from "react";
+import Error from "./Pages/Errorpage/Error";
 import Home from "./Pages/Homepage/Home";
 import About from "./Pages/AboutPage/About";
 import High from "./Pages/HighRisePage/High";
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/highrise" element={<High />}>
               <Route path="gallery:id" element={<Gallery />} />
             </Route>
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </BrowserRouter>
