@@ -46,7 +46,7 @@ const Nav = () => {
           <div className="col-8 d-flex justify-content-center link-holder">
             <div className="d-flex justify-content-evenly w-75 nav-link-container">
               <NavLink
-                to={"/UP-TOWN/"}
+                to={"UP-TOWN/"}
                 className="text-decoration-none link"
                 onClick={() => setNavToggle(!navToggle)}
               >
