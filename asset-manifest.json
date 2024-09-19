@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UP-TOWN/static/css/main.d3edc8f8.css",
-    "main.js": "/UP-TOWN/static/js/main.9d3eae5c.js",
+    "main.js": "/UP-TOWN/static/js/main.7bf29323.js",
     "static/media/High-rise.jpg": "/UP-TOWN/static/media/High-rise.0aa6502231957b7ecb2a.jpg",
     "static/media/Finance.jpg": "/UP-TOWN/static/media/Finance.baf51950f26205615167.jpg",
     "static/media/AboutUs.jpg": "/UP-TOWN/static/media/AboutUs.83f5b62c982b8c4f8eb5.jpg",
@@ -46,10 +46,10 @@
     "static/media/instagram.jpg": "/UP-TOWN/static/media/instagram.5e879aecffee9b76ed6b.jpg",
     "index.html": "/UP-TOWN/index.html",
     "main.d3edc8f8.css.map": "/UP-TOWN/static/css/main.d3edc8f8.css.map",
-    "main.9d3eae5c.js.map": "/UP-TOWN/static/js/main.9d3eae5c.js.map"
+    "main.7bf29323.js.map": "/UP-TOWN/static/js/main.7bf29323.js.map"
   },
   "entrypoints": [
     "static/css/main.d3edc8f8.css",
-    "static/js/main.9d3eae5c.js"
+    "static/js/main.7bf29323.js"
   ]
 }
