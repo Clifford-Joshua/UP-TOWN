@@ -27,8 +27,8 @@ const App = () => {
             <Route path="/highrise" element={<High />}>
               <Route path="gallery:id" element={<Gallery />} />
             </Route>
-            <Route path="*" element={<Error />} />
           </Route>
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </AppProvider>
