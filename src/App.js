@@ -18,12 +18,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Sharedpages />}>
             <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contactus" element={<Contact />} />
-            <Route path="login" element={<Login />} />
-            <Route path="signup" element={<Signup />} />
-            <Route path="submitted" element={<Submitted />} />
-            <Route path="highrise" element={<High />}>
+            <Route path="UP-TOWN/about" element={<About />} />
+            <Route path="UP-TOWN/contactus" element={<Contact />} />
+            <Route path="UP-TOWN/login" element={<Login />} />
+            <Route path="UP-TOWN/signup" element={<Signup />} />
+            <Route path="UP-TOWN/submitted" element={<Submitted />} />
+            <Route path="UP-TOWN/highrise" element={<High />}>
               <Route path="gallery:id" element={<Gallery />} />
             </Route>
           </Route>
