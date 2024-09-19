@@ -17,7 +17,7 @@ const App = () => {
     <AppProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="UP-TOWN/" element={<Sharedpages />}>
+          <Route path="/" element={<Sharedpages />}>
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contactus" element={<Contact />} />
