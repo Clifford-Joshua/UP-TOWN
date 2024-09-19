@@ -1,4 +1,5 @@
 import React from "react";
+import Error from "./Pages/Errorpage/Error";
 import Home from "./Pages/Homepage/Home";
 import About from "./Pages/AboutPage/About";
 import High from "./Pages/HighRisePage/High";
@@ -10,12 +11,12 @@ import Submitted from "./Pages/Submitted/submitted";
 import Sharedpages from "./SharedPages/Sharedpages";
 import { AppProvider } from "./Components/Hooks/context";
 
-import { Route, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
     <AppProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Sharedpages />}>
             <Route index element={<Home />} />
@@ -27,9 +28,10 @@ const App = () => {
             <Route path="highrise" element={<High />}>
               <Route path="gallery:id" element={<Gallery />} />
             </Route>
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </AppProvider>
   );
 };

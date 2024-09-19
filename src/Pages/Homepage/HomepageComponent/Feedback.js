@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-// import { Navigate } from "react-router-dom";
 const Feedback = () => {
-  // const navigate = Navigate();
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [feedback, setFeedBack] = useState("");
@@ -56,7 +54,6 @@ const Feedback = () => {
     }, 8000);
     if (submitted) {
       window.location.pathname = "/submitted";
-      // navigate("./submitted");
     }
     return () => clearInterval(timeinterval);
   });
