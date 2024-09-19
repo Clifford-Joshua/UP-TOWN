@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d3edc8f8.css",
-    "main.js": "/static/js/main.2c5db7d0.js",
+    "main.js": "/static/js/main.cc97ca19.js",
     "static/media/High-rise.jpg": "/static/media/High-rise.0aa6502231957b7ecb2a.jpg",
     "static/media/Finance.jpg": "/static/media/Finance.baf51950f26205615167.jpg",
     "static/media/AboutUs.jpg": "/static/media/AboutUs.83f5b62c982b8c4f8eb5.jpg",
@@ -46,10 +46,10 @@
     "static/media/instagram.jpg": "/static/media/instagram.5e879aecffee9b76ed6b.jpg",
     "index.html": "/index.html",
     "main.d3edc8f8.css.map": "/static/css/main.d3edc8f8.css.map",
-    "main.2c5db7d0.js.map": "/static/js/main.2c5db7d0.js.map"
+    "main.cc97ca19.js.map": "/static/js/main.cc97ca19.js.map"
   },
   "entrypoints": [
     "static/css/main.d3edc8f8.css",
-    "static/js/main.2c5db7d0.js"
+    "static/js/main.cc97ca19.js"
   ]
 }
