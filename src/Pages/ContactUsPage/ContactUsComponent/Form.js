@@ -1,39 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { Navigate } from "react-router-dom";
 const Form = () => {
+  const [formSubmit, setFormSubmit] = useState(false);
   const FormSubmit = (e) => {
     e.preventDefault();
-
-    window.location.pathname = `submitted`;
+    setFormSubmit(true);
   };
+
+  if (formSubmit) {
+    return <Navigate to={"/submitted"} />;
+  }
+
   return (
     <Wrapper>
       <form className="form" onSubmit={FormSubmit}>
         <div className="form_row">
-          <label htmlFor="" className="form_label">
+          <label htmlFor="name" className="form_label">
             Name
           </label>
-          <input type="text" className="form_text_input" required />
+          <input type="text" className="form_text_input" id="name" required />
         </div>
         <div className="form_row">
-          <label htmlFor="" className="form_label">
+          <label htmlFor="email" className="form_label">
             Email
           </label>
-          <input type="text" className="form_text_input" required />
+          <input type="text" className="form_text_input" id="email" required />
         </div>
         <div className="form_row">
-          <label htmlFor="" className="form_label">
+          <label htmlFor="question" className="form_label">
             What Service are you interested in ?
           </label>
-          <input type="text" className="form_text_input" />
+          <input type="text" className="form_text_input" id="question" />
         </div>
         <div className="form_row">
-          <label htmlFor="" className="form_label">
+          <label htmlFor="message" className="form_label">
             Message
           </label>
           <textarea
-            name=""
-            id=""
+            name="message"
+            id="message"
             className="form_text_input"
             required
           ></textarea>

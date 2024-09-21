@@ -11,7 +11,7 @@ $sliver: #cacdc9;
 // Merge custom font sizes with the default Bootstrap font sizes
 $font-sizes: map-merge(
   (
-    "7": 0.85rem // Custom font size,,,,,,,,,,,,,,,,,,,,
+    "7": 0.85rem // Custom font size,,,,,,,,,,,,,,,,,,,,,
   ),
   $font-sizes
 );

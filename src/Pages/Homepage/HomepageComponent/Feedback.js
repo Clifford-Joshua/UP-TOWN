@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Navigate } from "react-router-dom";
 const Feedback = () => {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
@@ -10,36 +11,38 @@ const Feedback = () => {
   const [namelength, setNameLength] = useState(false);
   const [emailvalue, setemailValue] = useState(false);
   const [feedbackvalue, setfeedbackValue] = useState(false);
+
   const submitHandler = (e) => {
     e.preventDefault();
+
+    let isValid = true;
+
     if (name === "") {
       setNameValue(true);
-      setSubmitted(false);
-    } else {
-      setSubmitted(true);
+      isValid = false;
     }
+
     if (name.length < 4) {
       setNameLength(true);
-      setSubmitted(false);
-    } else {
-      setSubmitted(true);
+      isValid = false;
     }
+
     if (email === "") {
       setemailValue(true);
-      setSubmitted(false);
-    } else {
-      setSubmitted(true);
+      isValid = false;
     }
+
     if (!email.includes("@")) {
       setEmailAt(true);
-      setSubmitted(false);
-    } else {
-      setSubmitted(true);
+      isValid = false;
     }
+
     if (feedback.length < 5) {
       setfeedbackValue(true);
-      setSubmitted(false);
-    } else {
+      isValid = false;
+    }
+
+    if (isValid) {
       setSubmitted(true);
     }
   };
@@ -52,11 +55,14 @@ const Feedback = () => {
       setEmailAt(false);
       setfeedbackValue(false);
     }, 8000);
-    if (submitted) {
-      window.location.pathname = "/submitted";
-    }
+
     return () => clearInterval(timeinterval);
   });
+
+  if (submitted) {
+    return <Navigate to={"/submitted"} />;
+  }
+
   return (
     <Wrapper>
       <div>

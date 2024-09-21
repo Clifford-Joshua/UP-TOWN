@@ -6,7 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 const Slide = () => {
   const [index, setIndex] = useState(0);
-  const [Data, setData] = useState(SlideData);
+  const [Data] = useState(SlideData);
   const { Slide } = Data;
   const Images = Slide.map(({ Img }) => {
     return Img;
